@@ -39,13 +39,13 @@ namespace ClientApp
         {
 
             Console.Write("please enter user details..");
-            Console.WriteLine("enter user id:");
+            Console.WriteLine("enter User Name:");
 
-            var id = Console.ReadLine();
-            Console.WriteLine("enter user Name:");
             var name = Console.ReadLine();
+            Console.WriteLine("enter Account Number:");
+            var accountNumber = Console.ReadLine();
 
-            var account = new Account() { Id = Convert.ToInt32(id), Name = name, AccountNumber = 12132323 };
+            var account = new Account() { Id = 0, Name = name, AccountNumber = accountNumber };
 
             Program pr = new Program();
 
